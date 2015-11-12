@@ -1,0 +1,134 @@
+
+Problem Statement
+    
+You have a rectangular board that is placed vertically. The board is divided into a grid of unit square cells. Some grid cells contain obstacles and some cells contain a grain of sand. All other cells are currently empty.
+You are given the description of the board as a String[] board. The elements of board correspond to rows of the grid in the order from top to bottom. (E.g., board[0] represents the topmost row of cells.) Each character in each element of board represents one cell. The character 'x' represents a cell with an obstacle, 'o' is a grain of sand, and '.' (period) is an empty cell.
+You would like to implement a simulation of falling sand. The rules are as follows:
+The obstacles don't move.
+Whenever there is an empty cell immediately below a grain of sand, the grain of sand moves into the empty cell.
+Return the final configuration of the board after all grains of sand reach their final locations.
+Definition
+    
+Class:
+FallingSand
+Method:
+simulate
+Parameters:
+vector <string>
+Returns:
+vector <string>
+Method signature:
+vector <string> simulate(vector <string> board)
+(be sure your method is public)
+Limits
+    
+Time limit (s):
+2.000
+Memory limit (MB):
+256
+Stack limit (MB):
+256
+Constraints
+-
+board will contain between 1 and 50 elements, inclusive.
+-
+Each element of board will have length between 1 and 50, inclusive.
+-
+All elements of board will have the same length.
+-
+Each character in each element of board will be one of 'x', 'o', and '.'.
+Examples
+0)
+
+    
+{"ooooo",
+ "..x..",
+ "....x",
+ ".....",
+ "....o"}
+Returns: {"..o..", "..x.o", "....x", ".....", "oo.oo" }
+The return value is:
+{"..o..", 
+ "..x.o", 
+ "....x", 
+ ".....", 
+ "oo.oo" }
+1)
+
+    
+{"..o..", 
+ "..x.o", 
+ "....x", 
+ ".....", 
+ "oo.oo" }
+Returns: {"..o..", "..x.o", "....x", ".....", "oo.oo" }
+
+2)
+
+    
+{"ooooxooo.ooxo.oxoxoooox.....x.oo"}
+Returns: {"ooooxooo.ooxo.oxoxoooox.....x.oo" }
+Nothing changes in this case, since all the sand is already at the bottom of the grid.
+3)
+
+    
+{"o",
+ ".",
+ "o",
+ ".",
+ "o",
+ ".",
+ "."}
+Returns: {".", ".", ".", ".", "o", "o", "o" }
+
+4)
+
+    
+{"oxxxxooo",
+ "xooooxxx",
+ "..xx.ooo",
+ "oooox.o.",
+ "..x....."}
+Returns: {"oxxxxooo", "x.oo.xxx", "..xxo...", ".oo.x.o.", "ooxo.ooo" }
+Note the final configuration of sand in the second column from the right.
+{"oxxxxooo", 
+ "x.oo.xxx", 
+ "..xxo...", 
+ ".oo.x.o.", 
+ "ooxo.ooo"}
+5)
+
+    
+{"..o..o..o..o..o..o..o..o..o..o..o",
+ "o..o..o..o..o..o..o..o..o..o..o..",
+ ".o..o..o..o..o..o..o..o..o..o..o.",
+ "...xxx...xxx...xxxxxxxxx...xxx...",
+ "...xxx...xxx...xxxxxxxxx...xxx...",
+ "...xxx...xxx......xxx......xxx...",
+ "...xxxxxxxxx......xxx......xxx...",
+ "...xxxxxxxxx......xxx......xxx...",
+ "...xxxxxxxxx......xxx......xxx...",
+ "...xxx...xxx......xxx............",
+ "...xxx...xxx...xxxxxxxxx...xxx...",
+ "...xxx...xxx...xxxxxxxxx...xxx...",
+ "..o..o..o..o..o..o..o..o..o..o..o",
+ "o..o..o..o..o..o..o..o..o..o..o..",
+ ".o..o..o..o..o..o..o..o..o..o..o."}
+Returns: 
+{".................................",
+ ".................................",
+ "...ooo...ooo...ooooooooo...ooo...",
+ "...xxx...xxx...xxxxxxxxx...xxx...",
+ "...xxx...xxx...xxxxxxxxx...xxx...",
+ "...xxxoooxxx......xxx......xxx...",
+ "...xxxxxxxxx......xxx......xxx...",
+ "...xxxxxxxxx......xxx......xxx...",
+ "...xxxxxxxxx......xxx......xxx...",
+ "...xxx...xxx......xxx............",
+ "...xxx...xxx...xxxxxxxxx...xxx...",
+ "...xxx...xxx...xxxxxxxxx...xxx...",
+ ".................................",
+ "ooo.........ooo.........ooo...ooo",
+ "ooooooooooooooooooooooooooooooooo" }
+
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2003, TopCoder, Inc. All rights reserved.

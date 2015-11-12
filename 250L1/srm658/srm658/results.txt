@@ -1,0 +1,32 @@
+"ab"
+"abab"
+Equal
+
+"abc"
+"bca"
+Not equal
+
+"abab"
+"aba"
+Not equal
+
+"aaaaa"
+"aaaaaa"
+Equal
+
+"ababab"
+"abab"
+Equal
+
+"a"
+"z"
+Not equal
+
+"ababa"
+"ababaa"
+Not equal
+
+"ababba"
+"abab"
+Not equal
+
