@@ -1,0 +1,56 @@
+
+Problem Statement
+    
+A letter-string is composed of letters ('A'-'Z','a'-'z') and dashes ('-'). The length of a letter-string is the number of characters in it not including dashes (in other words, the number of letters in the string). Given a list of letter-strings you will return the sum of their lengths.  Create a class LetterStrings that contains the method sum, which takes a vector <string>, s, and returns an int representing the sum of the lengths of the given letter-strings.
+Definition
+    
+Class:
+LetterStrings
+Method:
+sum
+Parameters:
+vector <string>
+Returns:
+int
+Method signature:
+int sum(vector <string> s)
+(be sure your method is public)
+Limits
+    
+Time limit (s):
+2.000
+Memory limit (MB):
+64
+Constraints
+-
+s will contain between 1 and 50 elements, inclusive.
+-
+Each element of s will have length between 1 and 50, inclusive.
+-
+Each element of s will contain only letters ('A'-'Z','a'-'z') and dashes ('-').
+Examples
+0)
+
+    
+{"-"}
+Returns: 0
+
+1)
+
+    
+{"A"}
+Returns: 1
+
+2)
+
+    
+{"-----Abc"}
+Returns: 3
+
+3)
+
+    
+{"-A-B-C-D", "--------EFGHI", "JKLMNOPQR", "---STU-VW-XYZ"}
+Returns: 26
+
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2003, TopCoder, Inc. All rights reserved.

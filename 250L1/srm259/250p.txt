@@ -1,0 +1,61 @@
+
+Problem Statement
+    
+The longest consecutive rating increase streak is a very important statistic in any competition. You are to calculate this statistic for a certain player.
+You will be given a vector <int> ratingChanges containing the rating changes of the player in chronological order. Your method should return the maximum number of consecutive competitions with positive rating changes. Note that 0 is not a positive number.
+Definition
+    
+Class:
+CompetitionStatistics
+Method:
+consecutiveGrowth
+Parameters:
+vector <int>
+Returns:
+int
+Method signature:
+int consecutiveGrowth(vector <int> ratingChanges)
+(be sure your method is public)
+Limits
+    
+Time limit (s):
+2.000
+Memory limit (MB):
+64
+Constraints
+-
+ratingChanges will contain between 1 and 50 elements, inclusive.
+-
+Each element of ratingChanges will be between -1000 and 1000, inclusive.
+Examples
+0)
+
+    
+{30, 5, -5, 3, 3, 1}
+Returns: 3
+The player raises rating two times, afterwards reduces it once and finally raises it three times in a row.
+1)
+
+    
+{-1, -5, -9}
+Returns: 0
+No rating changes are positive.
+2)
+
+    
+{12, 0, 15, 73}
+Returns: 2
+
+3)
+
+    
+{12, 1, 15, 73}
+Returns: 4
+
+4)
+
+    
+{-6, 13, 15, -11, 12, 12, 33, 12, -1}
+Returns: 4
+
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2003, TopCoder, Inc. All rights reserved.
