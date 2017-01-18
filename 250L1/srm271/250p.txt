@@ -1,0 +1,52 @@
+
+Problem Statement
+    
+You are given a string code containing a message composed entirely of decimal digits ('0'-'9'). Each digit consists of some number of dashes (see diagram below). A "check function" of a message is defined as the total number of dashes in the message. Return the value of the check function for the message represented in code.
+ 
+Definition
+    
+Class:
+CheckFunction
+Method:
+newFunction
+Parameters:
+string
+Returns:
+int
+Method signature:
+int newFunction(string code)
+(be sure your method is public)
+Limits
+    
+Time limit (s):
+2.000
+Memory limit (MB):
+64
+Notes
+-
+0 consists of 6 dashes, 1 consists of 2 dashes, 2 consists of 5 dashes, 3 consists of 5 dashes, 4 consists of 4 dashes, 5 consists of 5 dashes, 6 consists of 6 dashes, 7 consists of 3 dashes, 8 consists of 7 dashes, 9 consists of 6 dashes.
+Constraints
+-
+code will contain between 1 and 50 characters, inclusive.
+-
+Each character in code will be a digit ('0'-'9').
+Examples
+0)
+
+    
+"13579"
+Returns: 21
+1 consists of 2 dashes; 3 consists of 5 dashes; 5 consists of 5 dashes; 7 consists of 3 dashes; 9 consists of 6 dashes; 2 + 5 + 5 + 3 + 6 = 21.
+1)
+
+    
+"02468"
+Returns: 28
+
+2)
+
+    
+"73254370932875002027963295052175"
+Returns: 157
+
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2003, TopCoder, Inc. All rights reserved.

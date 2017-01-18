@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "srm507", "srm507\srm507.vcxproj", "{D254C64D-1506-444E-A0F2-D21FA3C67337}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D254C64D-1506-444E-A0F2-D21FA3C67337}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D254C64D-1506-444E-A0F2-D21FA3C67337}.Debug|Win32.Build.0 = Debug|Win32
+		{D254C64D-1506-444E-A0F2-D21FA3C67337}.Release|Win32.ActiveCfg = Release|Win32
+		{D254C64D-1506-444E-A0F2-D21FA3C67337}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

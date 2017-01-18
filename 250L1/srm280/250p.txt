@@ -1,0 +1,52 @@
+
+Problem Statement
+    
+Given an int n find all positive integers less than n whose digits are all different. Return the total number of such integers.
+Definition
+    
+Class:
+UniqueDigits
+Method:
+count
+Parameters:
+int
+Returns:
+int
+Method signature:
+int count(int n)
+(be sure your method is public)
+Limits
+    
+Time limit (s):
+2.000
+Memory limit (MB):
+64
+Constraints
+-
+n will be between 1 and 10000 inclusive.
+Examples
+0)
+
+    
+21
+Returns: 19
+We count all integers between 1 and 20, except 11.
+1)
+
+    
+101
+Returns: 90
+
+2)
+
+    
+1001
+Returns: 738
+
+3)
+
+    
+1
+Returns: 0
+
+This problem statement is the exclusive and proprietary property of TopCoder, Inc. Any unauthorized use or reproduction of this information without the prior written consent of TopCoder, Inc. is strictly prohibited. (c)2003, TopCoder, Inc. All rights reserved.
