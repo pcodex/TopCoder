@@ -4,7 +4,7 @@
 /*
 
 Problem Statement
-    
+Â Â Â Â 
 	Did you know that "Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo." is a grammatically correct sentence in American English?  In this problem we call a string good if it satisfies the following constraints:
 	The string contains one or more words.
 	Each word in the string is "buffalo".
@@ -13,7 +13,7 @@ Problem Statement
 	There are no spaces at the end of the string.
 	For example, the strings "buffalo", "buffalo buffalo" and "buffalo buffalo buffalo" are good but " buffalo", "buffalobuffalo", "buff alo", and "cow" are not.  You are given a string s that consists of spaces and lowercase letters. Return "Good" if s is a good string. Otherwise, return "Not good". (Note that the return value is case-sensitive.)
 	Definition
-	    
+	Â Â Â Â 
 		Class:
 		BuffaloBuffalo
 		Method:
@@ -26,7 +26,7 @@ Problem Statement
 		string check(string s)
 		(be sure your method is public)
 		Limits
-		    
+		Â Â Â Â 
 			Time limit (s):
 			2.000
 			Memory limit (MB):
@@ -41,37 +41,37 @@ Problem Statement
 			Examples
 			0)
 
-			    
+			Â Â Â Â 
 				"buffalo buffalo"
 				Returns: "Good"
 				This is a good sentence contains two 'buffalo'.
 				1)
 
-				    
+				Â Â Â Â 
 					"buffalobuffalo"
 					Returns: "Not good"
 					There must be exactly one space between two words.
 					2)
 
-					    
+					Â Â Â Â 
 						"buffalo buffalo buffalo"
 						Returns: "Good"
 
 						3)
 
-						    
+						Â Â Â Â 
 							"buf falo buffalo"
 							Returns: "Not good"
 
 							4)
 
-							    
+							Â Â Â Â 
 								"cow"
 								Returns: "Not good"
 
 								5)
 
-								    
+								Â Â Â Â 
 									"buffalo  buffalo"
 									Returns: "Not good"
 
@@ -98,6 +98,7 @@ public:
 string BuffaloBuffalo::check(string s)
 {
 	bool good = false;
+	// check when string is not empty and less than 7
 	if (s[0] != ' ' && s[s.length() - 1] != ' ' && s.length()>=7)
 	{
 		string scpy = s;
